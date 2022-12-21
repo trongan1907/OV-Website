@@ -1,0 +1,49 @@
+/*!
+ * Bootstrap  v5.2.2 (https://getbootstrap.com/)
+ * Copyright 2011-2022 The Bootstrap Authors
+ * Copyright 2011-2022 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+.container {
+  max-width: 1344px;
+}
+
+.btn {
+  font-family: "Mona Sans";
+  border-radius: 4px;
+  background-color: #1C212D;
+  border-color: #1C212D;
+}
+
+@font-face {
+  font-family: "Mona Sans";
+  src: url("/assets/font/mona-sans/Mona-Sans.woff2") format("woff2 supports variations"), url("/assets/font/mona-sans/Mona-Sans.woff2") format("woff2-variations");
+  font-style: normal;
+  font-display: swap;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 .h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Mona Sans";
+  font-weight: 600;
+}
+
+body {
+  font-family: "Mona Sans";
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+.section--sign-in {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+/*# sourceMappingURL=main.css.map */
