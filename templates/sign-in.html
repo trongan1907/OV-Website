@@ -8,22 +8,22 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/bootstrap.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/main.css'>
-    <script src='main.js'></script>
+    <script src='../assets/src/js/bootstrap.js'></script>
 </head>
 
 <body>
     <!--Sign in content-->
-    <section class="section section--sign-in">
+    <section class="section sign-in">
         <div class="section__content">
             <div class="container">
                 <div class="row">
                     <!--Left-side content-->
-                    <div class="section--sign-in__left col-lg-6">
-                        <div class="section--sign-in__image">
+                    <div class="sign-in__left col-lg-7">
+                        <div class="sign-in__image">
                             <img class="" src="../assets/img/sign-in-background.png" />
                         </div>
 
-                        <div class="section--sign-in__info">
+                        <div class="sign-in__info">
                             <h1 class="section__title">Find the job made for you.</h1>
                             <div class="section__subtitle">Browse over 130K jobs at top companies and fast-growing
                                 startups.
@@ -32,38 +32,46 @@
                     </div>
 
                     <!--Right-side content-->
-                    <div class="section--sign-in__right col-lg-6">
-                        <div class="section--sign-in__logo">
+                    <div class="sign-in__right col-lg-5">
+                        <div class="sign-in__logo">
                             <img src="../assets/img/logo-black.png" />
                         </div>
                         <!--Sign in with Google-->
+                        <div class="sign-in__google">
                         <h1 class="section__title">Welcome to OV</h1>
                         <div class="section__subtitle">Find the job made for you!</div>
-                        <a href="" class="">Login with Google</a>
-                        <div class="">or Login with Email</div>
-
+                        <a href="" class="sign-in__google__btn text-center">
+                            <img src="../assets/icons/logos_google-icon.svg" class=""/>
+                            Login with Google
+                        </a>
+                        <div class="sign-in__google__desc text-center"><span>or Login with Email</span></div>
+                    </div>
                         <!--Sign in form-->
-                        <div class="form">
-                            <form>
-                                <div class="form__content">
-                                    <div>
-                                        <label class="">Email Address</label>
-                                        <input type="text" class="" placeholder="" />
+                        <div class="sign-in__form">
+                            <form class="gform">
+                                <div class="gform_body">
+                                    <div class="gfield">
+                                        <label class="gform_label">Email Address</label>
+                                        <div class="gfield_input">
+                                            <input type="text" class="input" placeholder="Please enter your email" />
+                                        </div>
                                     </div>
 
-                                    <div>
-                                        <label class="">Password</label>
-                                        <input type="password" class="" placeholder="">
+                                    <div class="gfield">
+                                        <label class="gform_label">Password</label>
+                                        <div class="gfield_input">
+                                            <input type="password" class="input" placeholder="Please enter your password" />
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="">
-                                    <div><a href="" class="">Forgot Password?</a></div>
-                                    <div>
-                                        <input type="submit" class="btn btn-primary" value="Log in">
+                                <div class="gform_bottom">
+                                    <div class="gform_bottom_forgot-password"><a href="forgot-pass-email.html" class="forgot-password">Forgot Password?</a></div>
+                                    <div class="gform_bottom_submit">
+                                        <input type="submit" class="submit_button" value="Log in">
                                     </div>
-                                    <div class="">
-                                        Not registered?<a href="">Create an Account</a>
+                                    <div class="gform_bottom_register">
+                                        Not registered?<a href="sign-up.html" class=""> Create an Account</a>
                                     </div>
                                 </div>
                             </form>

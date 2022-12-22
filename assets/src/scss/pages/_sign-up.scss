@@ -1,0 +1,227 @@
+.sign-up {
+    .sign-up--left {
+        padding-top: 48px;
+        background-color: $eerie-black;
+        max-width: 366px;
+        width: 100%;
+        min-height: 500px;
+        height: 100%;
+        padding-left: 38px;
+
+        &__img {
+            margin-bottom: 30px;
+            margin-left: 10px;
+
+            .attachment-full {}
+        }
+
+        &__content {
+            .nav-item {
+                .nav-link {
+                    @include font-size(18px);
+                    color: $slate-gray;
+                    display: flex;
+                }
+
+                .active {
+                    background-color: transparent;
+                    color: $white;
+
+                    .circle {
+                        border: 2px solid $white;
+
+                        .checkmark {}
+                    }
+                }
+            }
+        }
+    }
+
+    .sign-up--right {
+        padding: 120px 138px;
+
+        &__content {
+
+            .role-select {
+                .gform_body {
+                    .gform_checkfield {
+                        @include input();
+                        max-width: 661px;
+                        margin-bottom: 16px;
+                        padding: 20px;
+
+                        .gfield_radio {}
+
+                        .gfield_label {
+                            font-weight: 500;
+                        }
+                    }
+
+                    .gform_checkfield:checked {
+                        border-color: $persian-blue;
+                        background-color: $persian-blue;
+                        color: $white;
+                    }
+                }
+            }
+
+            .company-info {
+                .gform_body {
+                    .gfield {
+                        margin-bottom: 24px;
+
+                        .gfield_label {
+                            @include font-size(18px);
+                            font-weight: 600;
+                            color: $eigengrau;
+                            margin-bottom: 16px;
+                        }
+
+                        .gfield_input {
+                            outline: none;
+
+                            .input-long {
+                                @include input();
+                                max-width: 660px;
+                                margin-bottom: 10px;
+                                padding: 20px;
+                                color: $cool-gray;
+                            }
+
+                            .input-long:focus {
+                                outline: 1px solid $persian-blue;
+                            }
+
+                            .input-short {
+                                @include input();
+                                max-width: 318px;
+                                margin-bottom: 10px;
+                                padding: 20px;
+                                color: $cool-gray;
+                            }
+
+                            .input-short:focus {
+                                outline: 1px solid $persian-blue;
+                            }
+                        }
+                    }
+
+                    .gform_social {
+                        &__title {
+                            @include font-size(18px);
+                            font-weight: 600;
+                            color: $eigengrau;
+                            margin-bottom: 16px;
+                        }
+
+                        &__content {
+                            .gfield_label {
+                                font-weight: 500;
+                                margin-bottom: 8px;
+                            }
+
+                            .gfield_input {
+                                outline: none;
+
+                                .input-short {
+                                    @include input();
+                                    max-width: 318px;
+                                    margin-bottom: 10px;
+                                    padding: 20px;
+                                    color: $cool-gray;
+                                }
+
+                                .input-short:focus {
+                                    outline: 1px solid $persian-blue;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .account-info {
+                .gform_body {
+                    .gfield {
+                        margin-bottom: 24px;
+
+                        .gfield_label {
+                            margin-bottom: 16px;
+                            @include font-size(18px);
+                            font-weight: 600;
+                        }
+
+                        .gfield_input {
+                            outline: none;
+                            @include input();
+                            max-width: 432px;
+                            padding: 20px;
+                            color: $cool-gray;
+                        }
+
+                        .gfield_input:focus {
+                            outline: 1px solid $persian-blue;
+                        }
+                    }
+
+                    .gfield_checkbox {
+                        &__desc {
+                            @include font-size(18px);
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+
+            .verify-email {
+                &__email {
+                    @include font-size(18px);
+                    font-weight: 600;
+                    color: $eigengrau;
+                }
+
+                &__content {
+                    .verify-email__message {
+                        @include font-size(18px);
+                        font-weight: 600;
+                    } 
+
+                    .verify-email__link {
+                        @include font-size(18px);
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        ::placeholder {
+            color: $cool-gray;
+        }
+
+        &__title {
+            margin-bottom: 16px;
+        }
+
+        &__subtitle {
+            margin-bottom: 40px;
+            @include font-size(18px);
+            color: $slate-gray;
+        }
+
+        .gform_bottom {
+            padding-top: 34px;
+
+            .gform_submit_button {
+                @include button();
+                max-width: 661px;
+                padding: 16px;
+                color: $white;
+                
+                .bi-arrow-right {
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+}

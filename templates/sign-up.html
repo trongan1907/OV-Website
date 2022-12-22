@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -7,106 +8,300 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/bootstrap.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/main.css'>
-    <script src='main.js'></script>
+    <script src='../assets/js/bootstrap.js'></script>
+    <script src='../assets/src/js/bootstrap.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <!--Left-side bar-->
-    <div class="">
-        <div class="">
-            <img class="" id="" src="../assets/img/logo-white.png"/>
+    <div class="sign-up">
+        <div class="row">
+            <!--Left-side bar-->
+            <div class="sign-up--left col-lg-3 position-fixed">
+                <div class="sign-up--left__img">
+                    <img class="attachment-full size-full lazy-load loaded" id="" src="../assets/img/logo-white.png" />
+                </div>
+                <ul class="nav nav-pills flex-column sign-up--left__content" id="pills-tab" role="tablist"
+                    aria-orientation="vertical">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-role-tab" data-toggle="pill" href="#pills-role" role="tab"
+                            aria-controls="pills-role" aria-selected="true">
+                            <div class="circle">
+                                <div class="checkmark"></div>
+                            </div>
+                            Select Role
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-company-tab" data-toggle="pill" href="#pills-company" role="tab"
+                            aria-controls="pills-company" aria-selected="false">
+                            <div class="circle">
+                                <div class="checkmark"></div>
+                            </div>Company Information
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-account-tab" data-toggle="pill" href="#pills-account" role="tab"
+                            aria-controls="pills-account" aria-selected="false">
+                            <div class="circle">
+                                <div class="checkmark"></div>
+                            </div>Account Information
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-verify-tab" data-toggle="pill" href="#pills-verify" role="tab"
+                            aria-controls="pills-verify" aria-selected="false">
+                            <div class="circle">
+                                <div class="checkmark"></div>
+                            </div>Verify Email
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--Sign up tab content-->
+            <section class="sign-up--right col-lg-9 offset-md-3">
+                <div class="tab-content sign-up--right__content" id="pills-tabContent">
+                    <!--Step 1-->
+                    <div class="tab-pane fade show active role-select" id="pills-role" role="tabpanel"
+                        aria-labelledby="pills-role-tab">
+                        <h1 class="sign-up--right__title">Let’s get started</h1>
+                        <div class="sign-up--right__subtitle">Select your role</div>
+                        <div class="role-select__content">
+                            <form class="role-select__form">
+                                <div class="gform_body">
+                                    <div class="gform_checkfield">
+                                        <input class="gfield_radio" type="checkbox" id="" name="" value="" />
+                                        <label class="gfield_label">Talent</label>
+                                    </div>
+
+                                    <div class="gform_checkfield">
+                                        <input class="gfield_radio" type="checkbox" id="" name="" value="" />
+                                        <label class="gfield_label">Start-Up</label>
+                                    </div>
+
+                                    <div class="gform_checkfield">
+                                        <input class="gfield_radio" type="checkbox" id="" name="" value="" />
+                                        <label class="gfield_label">Investor</label>
+                                    </div>
+                                </div>
+                                <div class="gform_bottom">
+                                    <button class="gform_submit_button" type="submit" id="pills-company-tab" data-toggle="pill"
+                                        href="#pills-company" role="tab" aria-controls="pills-company"
+                                        aria-selected="false">
+                                        Next <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-arrow-right alignt-self-center"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--Step 2-->
+                    <div class="tab-pane fade company-info" id="pills-company" role="tabpanel"
+                        aria-labelledby="pills-company-tab">
+                        <h1 class="sign-up--right__title">About your company</h1>
+                        <div class="sign-up--right__subtitle">Enter your company information</div>
+                        <div class="company-info__content">
+                            <form class="company-info__form">
+                                <div class="gform_body">
+
+                                    <div class="gfield">
+                                        <label class="gfield_label">Company Name</label>
+                                        <div class="gfield_input">
+                                            <input type="text" class="large input-long"
+                                                placeholder="Enter company name" />
+                                        </div>
+                                    </div>
+
+                                    <div class="gfield">
+                                        <label class="gfield_label">Headquarter</label>
+                                        <div class="gfield_input">
+                                            <input type="text" class="large input-long"
+                                                placeholder="Enter headquater’s address" />
+                                        </div>
+                                    </div>
+
+                                    <div class="gfield">
+                                        <label class="gfield_label">Founding Date</label>
+                                        <div class="gfield_input">
+                                            <input type="date" class="large input-short" placeholder="Please Select" />
+                                        </div>
+                                    </div>
+
+                                    <div class="gfield">
+                                        <label class="gfield_label">Current team size</label>
+                                        <div class="">
+                                            <input type="radio" class="large input-short" id="" name="" value="">
+                                            <label class="">
+                                                < 10</label><br>
+
+                                                    <input type="radio" class="large input-short" id="" name=""
+                                                        value="">
+                                                    <label class="">10 - 50 employees</label><br>
+
+                                                    <input type="radio" class="large input-short" id="" name=""
+                                                        value="">
+                                                    <label class="">50 - 200 employees</label><br>
+
+                                                    <input type="radio" class="large input-short" id="" name=""
+                                                        value="">
+                                                    <label class="">More than 200 employees</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="gfield">
+                                        <label class="gfield_label">Website</label>
+
+                                        <div class="gfield_input">
+                                            <input type="text" class="large input-short"
+                                                placeholder="Enter company website" />
+                                        </div>
+                                    </div>
+
+                                    <div class="gfield">
+                                        <label class="gfield_label">Industry</label>
+                                        <div class="gfield_input">
+                                            <select class="large input-short" name="" id="">
+                                                <option class="" value="" disabled selected>Please select</option>
+                                                <option class="" value="">Volvo</option>
+                                                <option class="" value="">Saab</option>
+                                                <option class="" value="">Opel</option>
+                                                <option class="" value="">Audi</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="gform_social">
+                                        <label class="gform_social__title">Social Profile</label>
+                                        <div class="gform_social__content">
+                                            <label class="gfield_label">
+                                                <span>
+                                                    <img src="../assets/icons/ri_linkedin-box-fill.svg">
+                                                </span>
+                                                Linkedin
+                                            </label>
+
+                                            <div class="gfield_input">
+                                                <input type="text" class="large input-short" placeholder="Linkedin" />
+                                            </div>
+
+                                            <label class="gfield_label">
+                                                <span>
+                                                    <img src="../assets/icons/facebook.svg">
+                                                </span>
+                                                Facebook
+                                            </label>
+
+                                            <div class="gfield_input">
+                                                <input type="text" class="large input-short" placeholder="Facebook" />
+                                            </div>
+
+                                            <label class="gfield_label">
+                                                <span>
+                                                    <img src="../assets/icons/instagram.svg">
+                                                </span>
+                                                Instagram
+                                            </label>
+
+                                            <div class="gfield_input">
+                                                <input type="text" class="large input-short" placeholder="Instagram" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gform_bottom">
+                                    <button class="gform_submit_button" type="submit" id="pills-account-tab" data-toggle="pill"
+                                        href="#pills-account" role="tab" aria-controls="pills-account"
+                                        aria-selected="false">
+                                        Next <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-arrow-right alignt-self-center"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--Step 3-->
+                    <div class="tab-pane fade account-info" id="pills-account" role="tabpanel"
+                        aria-labelledby="pills-account-tab">
+                        <h1 class="sign-up--right__title">Let’s set up your account</h1>
+                        <div class="sign-up--right__subtitle">Enter your company information</div>
+                        <div class="account-info__content">
+                            <form class="account-info__form">
+                                <div class="gform_body">
+                                    <div class="gfield">
+                                        <label class="gfield_label">Email</label>
+                                        <div>
+                                            <input type="text" class="gfield_input" placeholder="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="gfield">
+                                        <label class="gfield_label">Password</label>
+                                        <div>
+                                            <input type="password" class="gfield_input" placeholder="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="gfield">
+                                        <label class="gfield_label">Confirm Password</label>
+                                        <div>
+                                            <input type="password" class="gfield_input" placeholder="" />
+                                        </div>
+                                    </div>
+
+                                    <di class="gfield_checkbox">
+                                        <input type="checkbox" class="" id="" />
+                                        <label class="gfield_checkbox__desc">Receive newsletter from OV</label>
+                                </div>
+
+                        </div>
+
+                        <div class="gform_bottom">
+                            <button class="gform_submit_button" type="submit" id="pills-verify-tab" data-toggle="pill" href="#pills-verify" role="tab"
+                            aria-controls="pills-verify" aria-selected="true">
+                                Next <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-arrow-right alignt-self-center" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                            </button>
+                        </div>
+                        </form>
+                    </div>
+                    <!--Step 4-->
+                    <div class="tab-pane fade verify-email" id="pills-verify" role="tabpanel"
+                        aria-labelledby="pills-verify-tab">
+                        <h1 class="sign-up--right__title">Verify your email</h1>
+                        <div class="sign-up--right__subtitle">We’ve sent a message to <span
+                                class="verify-email__email">dean.nguyen@overseasvietnamese.com </span>with a active
+                            link to activate your account.</div>
+                        <div class="verify-email__content">
+                            <div class="verify-email__message">Didn’t get an email? Check your spam folder!</div>
+                            <a href="" class="verify-email__link">Resend email</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        <ul class="">
-            <li class="">Select Role</li>
-            <li class="">Company Information</li>
-            <li class="">Account Information</li>
-            <li class="">Verify Email</li>
-        </ul>
     </div>
-    <!--Sign up tab content-->
-    <section class="">
-        <!--Step 1-->
-        <div class="">
-            <h4 class="">Let’s get started</h4>
-            <div class="">Select your role</div>
-            <div class="">
-                <form class="">
-                    <div class="">
-                        <div class="">
-                            <input class="" type="checkbox" id="" name="" value=""/>
-                            <label>Talent</label>
-                        </div>
-        
-                        <div class="">
-                            <input class="" type="checkbox" id="" name="" value=""/>
-                            <label>Start-Up</label>
-                        </div>
-        
-                        <div class="">
-                            <input class="" type="checkbox" id="" name="" value=""/>
-                            <label>Investor</label>
-                        </div>
-                    </div>
-                    <div class="">
-                        <input class="" type="submit" id="" name="" value="Next"/>
-                    </div>
-                </form>  
-            </div>
-        </div>
-
-        <!--Step 2-->
-        <div class="">
-            <h4 class="">About your company</h4>
-            <div class="">Enter your company information</div>
-            <div class="">
-                <form class="">
-                    <div class="">
-                        <label class="">Company Name</label>
-                        <input type="text" class="" placeholder="Enter company name"/>
-
-                        <label class="">Headquarter</label>
-                        <input type="text" class="" placeholder="Enter headquater’s address"/>
-
-                        <label class="">Founding Date</label>
-                        <input type="date" class="" placeholder="Please Select"/>
-
-                        <label class="">Current team size</label>
-
-                        <label class="">Website</label>
-                        <input type="date" class="" placeholder="Please Select"/>
-
-                        <label class="">Industry</label>
-                        <select class="" name="" id="">
-                            <option class=""  value="">Volvo</option>
-                            <option class=""  value="">Saab</option>
-                            <option class=""  value="">Opel</option>
-                            <option class=""  value="">Audi</option>
-                          </select>
-
-                        <label class="">Social Profile</label>
-                        <label class="">Linkedin</label>
-                        <input type="text" class="" placeholder="Linkedin"/>
-
-                        <label class="">Facebook</label>
-                        <input type="text" class="" placeholder="Facebook"/>
-                        
-                        <label class="">Instagram</label>
-                        <input type="text" class="" placeholder="Instagram"/>
-                    </div>
-
-                    <div class="">
-                        <input type="submit" id="" class="" value="Next"/>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <!--Step 3-->
-        <div class="">
-
-        </div>
-        <!--Step 4-->
-        <div class="">
-
-        </div>
-    </section>
 </body>
+
 </html>
