@@ -3,15 +3,18 @@
     border-radius: 4px;
     background-color: $eigengrau;
     border-color: $eigengrau;
+    width: 100%;
 }
 
 @mixin input {
-    border-radius: 16px;
-    border: 1px solid $desc-color;
+    border-radius: 4px;
+    border: 1px solid $cool-gray;
+    width: 100%;
 }
 
 @mixin tab {
     border-radius: 200px;
     height: 41px;
     background-color: $white-smoke;
+    width: 100%;
 }   
