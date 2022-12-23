@@ -430,6 +430,9 @@ body {
 .forgot-password .container .section__content .forgot-password__form .gform_body .gfield .gfield_input .input:focus {
   outline: 1px solid #143FCD;
 }
+.forgot-password .container .section__content .forgot-password__form .gform_body .gfield .gfield_input ::placeholder {
+  color: #989FB9;
+}
 .forgot-password .container .section__content .forgot-password__form .gform_bottom {
   text-align: center;
 }

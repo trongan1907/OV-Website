@@ -552,14 +552,23 @@ progress {
 .col {
   flex: 1 0 0%;
 }
+@media (min-width: 768px) {
+  .offset-md-3 {
+    margin-left: 25%;
+  }
+}
 @media (min-width: 992px) {
   .col-lg-3 {
     flex: 0 0 auto;
     width: 25%;
   }
-  .col-lg-6 {
+  .col-lg-5 {
     flex: 0 0 auto;
-    width: 50%;
+    width: 41.66666667%;
+  }
+  .col-lg-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
   }
   .col-lg-9 {
     flex: 0 0 auto;
@@ -1513,8 +1522,16 @@ progress {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
+.position-fixed {
+  position: fixed !important;
+}
+
 .flex-column {
   flex-direction: column !important;
+}
+
+.text-center {
+  text-align: center !important;
 }
 
 /* rtl:begin:remove */
