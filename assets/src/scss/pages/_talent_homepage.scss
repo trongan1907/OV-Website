@@ -1,0 +1,605 @@
+.site-content {
+    .section--content {
+
+        &__sidebar {
+            padding: 24px;
+            background-color: #fcfcfc;
+
+            .sidebar--content {
+                .sidebar--top {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 16px;
+
+                    .section__title {
+                        font-size: 24px;
+                        color: #1C212D;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        font-weight: 500;
+                        color: #143FCD;
+                    }
+                }
+
+                .tab-content {
+                    .tab-pane {
+                        .main_job-box {
+                            padding: 16px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            border-top: 1px solid #E7E7E7;
+
+                            &__info {
+                                .main_job-box__status {
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 1.5;
+                                    color: #1A9669;
+                                }
+
+                                .main_job-box__name {
+                                    font-weight: 500;
+                                    line-height: 1.5;
+                                    color: #1C212D;
+                                }
+
+                                .main_job-box__company {
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 1.5;
+                                    color: #717584;
+                                }
+                            }
+
+                            .star {
+                                height: 24px;
+                                width: 24px;
+
+                                .like {
+                                    position: relative;
+
+                                    img {
+                                        position: absolute;
+                                        width: 24px;
+                                        height: 24px;
+                                    }
+
+                                    &.active {
+                                        img:first-child {
+                                            display: none;
+                                        }
+
+                                        img:last-child {
+                                            display: block !important;
+                                        }
+
+                                        padding-top: 0px;
+                                        margin-top: 0px;
+                                        position: unset;
+                                        background: none;
+                                    }
+                                }
+                            }
+
+                            &:hover {
+                                background-color: #f4f4f4;
+                                border-radius: 4px;
+                                border-top: none;
+                            }
+
+                            &:first-child {
+                                border-top: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background: #F4F4F4;
+                border-radius: 4px;
+                padding: 8px;
+
+                &-item {
+                    width: 50%;
+
+                    .nav-link {
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: #717584;
+                        width: 100%;
+                    }
+
+                    .active {
+                        background: #1E1E1E;
+                        border-radius: 4px;
+                        font-size: 14px;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+
+        &__main {
+            padding: 24px 0 0 24px;
+
+            &--title {
+                h4 {
+                    font-size: 24px;
+                    line-height: 1.5;
+                    color: #1C212D;
+                    margin-bottom: 18px;
+                }
+            }
+
+            .talent--menu__content {
+                .nav {
+                    border-bottom: 1px solid #E7E7E7;
+                    margin: 0;
+
+                    &-item {
+                        margin-right: 30px;
+
+                        &:first-child {
+                            .nav-link {
+                                img {
+                                    margin-right: 8px;
+                                }
+
+                                div {
+                                    color: #FFAF36;
+                                }
+                            }
+                        }
+
+                        .nav-link {
+                            padding-bottom: 16px;
+                            font-weight: 500;
+                            line-height: 1.5;
+                            color: #989FB9;
+                            border-radius: 0;
+
+                            nav {
+                                color: #1C212D;
+                                background-color: #f4f4f4;
+                                border-radius: 4px;
+                                margin-left: 16px;
+                                padding: 4px;
+                                font-size: 12px;
+                            }
+                        }
+
+                        .active {
+                            background-color: transparent;
+                            color: #1C212D;
+                            border-bottom: 1.5px solid #1C212D;
+                        }
+                    }
+                }
+
+                .tab-content {
+                    .list-main_talent {
+                        display: flex;
+
+                        .list--talent {
+                            .soft {
+                                display: flex;
+                                padding: 25px 0;
+
+                                .label {
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    color: #1C212D;
+                                }
+
+                                .form-select {
+                                    max-width: 150px;
+                                    margin-left: 16px;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    color: #1C212D;
+                                    height: 45px;
+
+                                    &:focus {
+                                        box-shadow: none;
+                                    }
+                                }
+                            }
+
+                            .talent-box {
+                                border: 1px solid #E7E7E7;
+                                border-radius: 4px;
+                                padding: 24px;
+
+                                &__info {
+                                    display: flex;
+
+                                    &-image {
+                                        width: 64px;
+                                        height: 64px;
+                                        border-radius: 50%;
+                                    }
+
+                                    &-more {
+                                        padding-left: 16px;
+
+                                        .name {
+                                            margin: 0;
+                                            font-size: 20px;
+                                            line-height: 1.5;
+                                            color: #000000;
+                                        }
+
+                                        .information {
+                                            padding: 0;
+                                            margin: 0;
+                                            display: flex;
+
+                                            li {
+                                                margin-right: 20px;
+                                                font-weight: 400;
+                                                font-size: 14px;
+                                                line-height: 1.5;
+                                                color: #717584;
+
+                                                &:first-child {
+                                                    list-style: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &__detail {
+                                    &--looking {
+                                        padding: 16px 0;
+                                        border-bottom: 1px solid #E7E7E7;
+
+                                        &__title {
+                                            font-weight: 600;
+                                            font-size: 12px;
+                                            line-height: 1.5;
+                                            text-transform: uppercase;
+                                            color: #989FB9;
+                                            padding-bottom: 12px;
+                                        }
+
+                                        .description {
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            line-height: 1.5;
+                                            color: #1C212D;
+                                            border-left: 1.5px solid #F42929;
+                                            padding-left: 12px;
+                                        }
+                                    }
+
+                                    &--experience {
+                                        padding: 16px 0;
+                                        border-bottom: 1px solid #E7E7E7;
+
+                                        &__title {
+                                            font-weight: 600;
+                                            font-size: 12px;
+                                            line-height: 1.5;
+                                            text-transform: uppercase;
+                                            color: #989FB9;
+                                            padding-bottom: 12px;
+                                        }
+
+                                        .company {
+                                            display: flex;
+                                            padding-bottom: 12px;
+
+                                            &__logo {
+                                                width: 40px;
+                                                height: 40px;
+                                                border-radius: 4px;
+                                            }
+
+                                            &__exp-more {
+                                                margin-left: 16px;
+
+                                                .company-name {
+                                                    font-size: 14px;
+                                                    line-height: 1.5;
+                                                    color: #1C212D;
+                                                    margin: 0;
+                                                }
+
+                                                nav {
+                                                    font-weight: 500;
+                                                    font-size: 12px;
+                                                    color: #717584;
+                                                }
+
+                                                .information {
+                                                    padding: 0;
+                                                    margin: 0;
+                                                    display: flex;
+
+                                                    li {
+                                                        margin-right: 20px;
+                                                        font-weight: 400;
+                                                        font-size: 12px;
+                                                        color: #717584;
+
+                                                        &:first-child {
+                                                            list-style: none;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        .show {
+                                            a {
+                                                font-size: 12px;
+                                                text-decoration-line: underline;
+                                                color: #143FCD;
+                                            }
+                                        }
+                                    }
+
+                                    &--education {
+                                        padding: 16px 0;
+                                        border-bottom: 1px solid #E7E7E7;
+
+                                        &__title {
+                                            font-weight: 600;
+                                            font-size: 12px;
+                                            text-transform: uppercase;
+                                            color: #989FB9;
+                                            padding-bottom: 12px;
+                                        }
+
+                                        .school {
+                                            padding-bottom: 12px;
+
+                                            .school--name {
+                                                font-size: 14px;
+                                                line-height: 1.5;
+                                                color: #1C212D;
+                                                margin: 0;
+                                            }
+
+                                            .information {
+                                                padding: 0;
+                                                margin: 0;
+                                                display: flex;
+
+                                                li {
+                                                    margin-right: 20px;
+                                                    font-weight: 400;
+                                                    font-size: 12px;
+                                                    color: #717584;
+
+                                                    &:first-child {
+                                                        list-style: none;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &--skill {
+                                        padding: 16px 0;
+                                        border-bottom: 1px solid #E7E7E7;
+
+                                        &__title {
+                                            font-weight: 600;
+                                            font-size: 12px;
+                                            text-transform: uppercase;
+                                            color: #989FB9;
+                                            padding-bottom: 12px;
+                                        }
+
+                                        .list-skill {
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            flex-direction: row;
+                                            gap: 8px;
+
+                                            .skill {
+                                                box-sizing: border-box;
+                                                align-items: center;
+                                                padding: 8px;
+                                                background: #F4F4F4;
+                                                border-radius: 4px;
+                                                font-weight: 500;
+                                                font-size: 12px;
+                                                color: #717584;
+                                            }
+                                        }
+                                    }
+
+                                    &--ideal {
+                                        padding: 16px 0;
+                                        border-bottom: 1px solid #E7E7E7;
+
+                                        &__title {
+                                            font-weight: 600;
+                                            font-size: 12px;
+                                            text-transform: uppercase;
+                                            color: #989FB9;
+                                        }
+
+                                        .ideal {
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            flex-direction: row;
+                                            gap: 8px;
+
+                                            .job,
+                                            .salary,
+                                            .status {
+                                                box-sizing: border-box;
+                                                align-items: center;
+                                                padding: 8px;
+                                                background: #F4F4F4;
+                                                border-radius: 4px;
+                                                font-weight: 500;
+                                                font-size: 12px;
+                                                color: #717584;
+                                            }
+
+                                            .job {
+                                                background-color: #e5fee7;
+                                                color: #1a9669;
+
+                                                img {
+                                                    margin-right: 11px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .choose {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    flex-direction: row;
+                                    gap: 8px;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    padding-top: 16px;
+
+                                    img {
+                                        margin-right: 11px;
+                                    }
+
+                                    .not {
+                                        padding: 12px 16px;
+                                        background: #FFE4E4;
+                                        border-radius: 4px;
+                                        color: #f42929;
+                                        text-decoration: none;
+                                    }
+
+                                    .yes {
+                                        padding: 12px 16px;
+                                        background: #1e1e1e;
+                                        border-radius: 4px;
+                                        color: #ffffff;
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                        }
+
+                        .talent--bar {
+                            padding: 25px 0 0 25px;
+
+                            .search {
+                                &__title {
+                                    line-height: 1.5;
+                                    color: #1C212D;
+                                    font-size: 16px;
+                                    padding-bottom: 8px;
+                                    margin: 0;
+                                }
+
+                                div {
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 1.5;
+                                    color: #717584;
+                                    padding-bottom: 10px;
+                                }
+
+                                form {
+                                    position: relative;
+                                    padding-bottom: 20px;
+
+                                    .submit {
+                                        position: absolute;
+                                        background-color: #f4f4f4;
+                                        border-radius: 4px;
+                                        border: none;
+                                        padding: 2px 4px;
+                                        left: 9px;
+                                        top: 6px;
+                                    }
+
+                                    input {
+                                        border: 1px solid #989FB9;
+                                        border-radius: 4px;
+                                        padding: 8px 8px 8px 40px;
+                                        width: 100%;
+                                    }
+                                }
+                            }
+
+                            .list-category {
+                                .category {
+                                    padding: 16px 0;
+                                    border-bottom: 1px solid #E7E7E7;
+
+                                    &__title {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        font-size: 16px;
+                                        padding-bottom: 8px;
+
+                                        .category--name {
+                                            font-weight: 600;
+                                            line-height: 1.5;
+                                            color: #1C212D;
+                                        }
+
+                                        .plus {
+                                            text-decoration: none;
+                                            color: #989FB9;
+                                            font-size: 18px;
+                                        }
+                                    }
+
+                                    &__content {
+                                        font-weight: 500;
+                                        font-size: 12px;
+                                        line-height: 150%;
+                                        color: #717584;
+
+                                        &--role {
+                                            display: flex;
+
+                                            .role {
+                                                background-color: #f4f4f4;
+                                                border-radius: 200px;
+                                                padding: 10px 16px;
+                                                font-size: 14px;
+                                                color: #000000;
+                                            }
+                                        }
+
+                                        &--location {
+                                            display: flex;
+
+                                            .location {
+                                                background-color: #f4f4f4;
+                                                border-radius: 200px;
+                                                padding: 10px 16px;
+                                                font-size: 14px;
+                                                color: #000000;
+                                            }
+                                        }
+                                    }
+
+                                    &:last-child {
+                                        border-bottom: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

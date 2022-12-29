@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/main.css'>
+    <script src='../assets/js/main.js'></script>
+    <script src='../assets/js/bootstrap.min.js'></script>
+    <title>Start up-talent</title>
+</head>
+<body>
+    <header id="masthead" class="site-header">
+        <nav id="nav-main" class="nav navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="nav-main__menu col-lg-9">
+                    <ul class="navbar-nav nav__menu">
+                        <li class="nav-item navbar-brand align-self-center">
+                            <a class="logo" href="">
+                                <img src="../assets/img/logo-black.png" alt="logo" class="w-100">
+                            </a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link" href="">Talents</a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link" href="">Chat</a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link" href="">Job Post</a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link" href="">Fundraise</a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link" href="">Analytics</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar navbar-right col-lg-3">
+                    <div class="navbar-right__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+</svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+  <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+</svg>
+                    </div>
+                    <div class="navbar-right__info navbar">
+                        <div class="navbar-right__info-image">
+                            <img src="../assets/img/user.png" alt="avatar" class="w-100">
+                        </div>
+                        <div class="information align-self-center">
+                            <h5 class="name">Dean Nguyen</h5>
+                            <p>Innovation Studio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="content" class="site-content">
+        <div class="container-fluid">
+            <section class="row section--content g-0">
+
+                <!-- sidebar -->
+                <div class="section--content__sidebar col-lg-2">
+                    <div class="">
+                        <div class="sidebar--content">
+                            <div class="sidebar--top">
+                                <h4 class="section__title text-dark">Source</h4>
+                                <a href="">+ New search</a>
+                            </div>
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Starred</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">All Searches</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+                                <div class="tab-pane fade list-main_job" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    <div class="main_job-box">
+                                        <div class="main_job-box__detail">
+                                            <div class="main_job-box__info">
+                                                <div class="main_job-box__status">
+                                                New
+                                                </div>
+                                                <div class="main_job-box__name">
+                                                Product Designer
+                                                </div>
+                                                <div class="main_job-box__company">Adamo Software</div>
+                                            </div>
+                                            <div class="star">
+                                                <a href="" class="like" id="myBtn" onclick="myFunction()">
+                                                    <img src="../assets/icons/star-unfilled.svg">
+                                                    <img style="display: none;" src="../assets/icons/star.svg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main_job-box">
+                                        <div class="main_job-box__detail">
+                                            <div class="main_job-box__info">
+                                                <div class="main_job-box__status">
+                                                New
+                                                </div>
+                                                <div class="main_job-box__name">
+                                                Product Designer
+                                                </div>
+                                                <div class="main_job-box__company">Adamo Software</div>
+                                            </div>
+                                            <div class="star">
+                                                <a href="" class="like" id="myBtn" onclick="myFunction()">
+                                                    <img src="../assets/icons/star-unfilled.svg">
+                                                    <img style="display: none;" src="../assets/icons/star.svg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main_job-box">
+                                        <div class="main_job-box__detail">
+                                            <div class="main_job-box__info">
+                                                <div class="main_job-box__status">
+                                                New
+                                                </div>
+                                                <div class="main_job-box__name">
+                                                Product Designer
+                                                </div>
+                                                <div class="main_job-box__company">Adamo Software</div>
+                                            </div>
+                                            <div class="star">
+                                                <a href="" class="like" id="myBtn" onclick="myFunction()">
+                                                    <img src="../assets/icons/star-unfilled.svg">
+                                                    <img style="display: none;" src="../assets/icons/star.svg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main_job-box">
+                                        <div class="main_job-box__detail">
+                                            <div class="main_job-box__info">
+                                                <div class="main_job-box__status">
+                                                New
+                                                </div>
+                                                <div class="main_job-box__name">
+                                                Product Designer
+                                                </div>
+                                                <div class="main_job-box__company">Adamo Software</div>
+                                            </div>
+                                            <div class="star">
+                                                <a href="" class="like" id="myBtn" onclick="myFunction()">
+                                                    <img src="../assets/icons/star-unfilled.svg">
+                                                    <img style="display: none;" src="../assets/icons/star.svg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- main content -->
+                <div class="section--content__main col-lg-10">
+                    <div class="section--content__main--title">
+                        <h4>Senior Product Designer</h4>
+                    </div>
+                    <div class="talent--menu">
+                        <div class="talent--menu__content">
+                            <ul class="nav nav-pills talent--menu__content--title" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link navbar" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-curated" type="button" role="tab" aria-controls="pills-curated" aria-selected="flase">
+                                        <img src="../assets/icons/diamond.svg" alt="diamond">
+                                        <div>Curated</div>
+                                        <nav>100</nav>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active navbar" id="pills-actived-tab" data-bs-toggle="pill" data-bs-target="#pills-actived" type="button" role="tab" aria-controls="pills-actived" aria-selected="true">
+                                        <div>Active</div>
+                                        <nav>18k</nav>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link navbar" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-passive" type="button" role="tab" aria-controls="pills-passive" aria-selected="false">
+                                        <div>Passive</div>
+                                        <nav>20k</nav>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade " id="pills-curated" role="tabpanel" aria-labelledby="pills-curated-tab">...</div>
+                                <div class="tab-pane fade active show list-main_talent list-actived" id="pills-actived" role="tabpanel" aria-labelledby="pills-actived-tab">
+                                    <div class="list--talent col-lg-9">
+                                        <div class="soft navbar justify-content-end">
+                                            <label class="label">Soft by</label>
+                                            <select class="form-select" onchange="">
+                                                <option value="0">Best Match</option>
+                                                <option value="priceAsc">Best Match</option>
+                                                <option value="priceDesc">Best Match</option>
+                                                <option value="nameAsc">Best Match</option>
+                                                <option value="nameDesc">Best Match</option>
+                                            </select>
+                                        </div>
+                                        <div class="talent-box">
+                                            <div class="talent-box__info">
+                                                <div class="talent-box__info-image">
+                                                    <img src="../assets/img/avatar1.png" alt="avatar" class="w-100">
+                                                </div>
+                                                <div class="talent-box__info-more">
+                                                    <h5 class="name">Annette Black</h5>
+                                                    <ul class="information">
+                                                        <li>10 years of exp</li>
+                                                        <li>San Francisco, California</li>
+                                                        <li>Open to remote</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="talent-box__detail">
+                                                <div class="talent-box__detail--looking">
+                                                    <div class="talent-box__detail--looking__title">LOOKING FOR</div>
+                                                    <div class="description">I'd love to work for a small to medium size company on native mobile apps and/or enterprise software, mentoring a small team of junior designers.</div>
+                                                </div>
+                                                <div class="talent-box__detail--experience">
+                                                    <div class="talent-box__detail--experience__title">EXPERIENCES</div>
+                                                    <div class="company">
+                                                        <div class="company__logo">
+                                                            <img src="../assets/img/image40.png" alt="logo" class="w-100">
+                                                        </div>
+                                                        <div class="company__exp-more">
+                                                            <h5 class="company-name">Senior Product Designer</h5>
+                                                            <nav>Beats by Dre</nav>
+                                                            <ul class="information">
+                                                                <li>Apr 2019 to Apr 2020</li>
+                                                                <li>1 year 1 month</li>
+                                                                
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="company">
+                                                        <div class="company__logo">
+                                                            <img src="../assets/img/mcdonald.png" alt="logo" class="w-100">
+                                                        </div>
+                                                        <div class="company__exp-more">
+                                                            <h5 class="company-name">UX Consultant</h5>
+                                                            <nav>McDonald’s</nav>
+                                                            <ul class="information">
+                                                                <li>Jun 2018 to Apr 2019</li>
+                                                                <li>11 months</li>
+                                                                
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="show">
+                                                        <a>View 5 more</a>
+                                                    </div>
+                                                </div>
+                                                <div class="talent-box__detail--education">
+                                                    <div class="talent-box__detail--education__title">EDUCATION</div>
+                                                    <div class="school">
+                                                        <h5 class="school--name">BFA, Digital Arts</h5>
+                                                        <ul class="information">
+                                                            <li>Université Rennes 2</li>
+                                                            <li>2010</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="school">
+                                                        <h5 class="school--name">Master's, Diseño y dirección de proyectos web</h5>
+                                                        <ul class="information">
+                                                            <li>Elisava, Barcelona School of Design and Engineering</li>
+                                                            <li>2013</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="talent-box__detail--skill">
+                                                    <div class="talent-box__detail--skill__title">SKILL</div>
+                                                    <div class="list-skill">
+                                                        <div class="skill">
+                                                            UX Design
+                                                        </div>
+                                                        <div class="skill">
+                                                            Social Media Maketing
+                                                        </div>
+                                                        <div class="skill">
+                                                            Java Script
+                                                        </div>
+                                                        <div class="skill">
+                                                            User Experience Design
+                                                        </div>
+                                                        <div class="skill">
+                                                            E-Commerce
+                                                        </div>
+                                                        <div class="skill">
+                                                            Interaction Design
+                                                        </div>
+                                                        <div class="skill">
+                                                            User Interface Design
+                                                        </div>
+                                                        <div class="skill">
+                                                            Adobe Creative Suite
+                                                        </div>
+                                                        <div class="skill">
+                                                            Figma
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="talent-box__detail--ideal">
+                                                    <div class="talent-box__detail--ideal__title">IDEAL NEXT OPPORTUNIRY</div>
+                                                    <div class="ideal">
+                                                        <div class="job">
+                                                            <img src="../assets/icons/check.svg" alt="check">
+                                                            Product Designer
+                                                        </div>
+                                                        <div class="salary">
+                                                            150,000 US$
+                                                        </div>
+                                                        <div class="status">
+                                                            Remote Prefered
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choose justify-content-end">
+                                                <a class="not" href=""><img src="../assets/icons/X.svg" alt="x">Not Interested</a>
+                                                <a class="yes" href=""><img src="../assets/icons/check-2.svg" alt="check">Request to chat</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="talent--bar col-lg-3">
+                                        <div class="search">
+                                            <h5 class="search__title">Keyword Search</h5>
+                                            <div>Specific keywords in job titles, companies, degrees or skills</div>
+                                            <form>
+                                                <input type="text" name="search" placeholder="Enter keywords">
+                                                <button class="submit"><img src="../assets/icons/magnifying-glass-2.svg" alt="search"></button>
+                                            </form>
+                                        </div>
+                                        <div class="list-category">
+                                            <div class="category">
+                                                <div class="category__title">
+                                                    <nav class="category--name">Curated</nav>
+                                                    <a href="" class="plus">+</a>
+                                                </div>
+                                                <div class="category__content">
+                                                    Exclude Curated candidates from search results
+                                                </div>
+                                            </div>
+                                            <div class="category">
+                                                <div class="category__title">
+                                                    <nav class="category--name">Role</nav>
+                                                    <a href="" class="plus">+</a>
+                                                </div>
+                                                <div class="category__content category__content--role">
+                                                    <nav class="role">
+                                                        Product Designer
+                                                        <a href="" class="delete">
+                                                            <img src="../assets/icons/X-2.svg" alt="delete">
+                                                        </a>
+                                                    </nav>
+                                                </div>
+                                            </div>
+                                            <div class="category">
+                                                <div class="category__title">
+                                                    <nav class="category--name">Location</nav>
+                                                    <a href="" class="plus">+</a>
+                                                </div>
+                                                <div class="category__content category__content--location">
+                                                    <nav class="location">
+                                                        Los Angeles, California
+                                                        <a href="" class="delete">
+                                                            <img src="../assets/icons/X-2.svg" alt="delete">
+                                                        </a>
+                                                    </nav>
+                                                </div>
+                                            </div>
+                                            <div class="category">
+                                                <div class="category__title">
+                                                    <nav class="category--name">Skill</nav>
+                                                    <a href="" class="plus">+</a>
+                                                </div>
+                                                <div class="category__content">
+                                                    Programming languages, frameworks and tools
+                                                </div>
+                                            </div>
+                                            <div class="category">
+                                                <div class="category__title">
+                                                    <nav class="category--name">Experence</nav>
+                                                    <a href="" class="plus">+</a>
+                                                </div>
+                                                <div class="category__content">
+                                                    Years of experience and work history
+                                                </div>
+                                            </div>
+                                            <div class="category">
+                                                <div class="category__title">
+                                                    <nav class="category--name">Diversity Boost</nav>
+                                                    <a href="" class="plus">+</a>
+                                                </div>
+                                                <div class="category__content">
+                                                    Highlight underrepresented groups
+                                                </div>
+                                            </div>
+                                            <div class="category">
+                                                <div class="category__title">
+                                                    <nav class="category--name">Education</nav>
+                                                    <a href="" class="plus">+</a>
+                                                </div>
+                                                <div class="category__content">
+                                                    Degree type and education background
+                                                </div>
+                                            </div>
+                                            <div class="category">
+                                                <div class="category__title">
+                                                    <nav class="category--name">Preferences</nav>
+                                                    <a href="" class="plus">+</a>
+                                                </div>
+                                                <div class="category__content">
+                                                    Ideal next opportunity and company preferences
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade passive" id="pills-passive" role="tabpanel" aria-labelledby="pills-passive-tab">...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

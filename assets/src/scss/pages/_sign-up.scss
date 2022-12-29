@@ -1,4 +1,8 @@
 .sign-up {
+    .row {
+        --bs-gutter-x: 0;
+    }
+
     .sign-up--left {
         padding-top: 48px;
         background-color: $eerie-black;
@@ -185,11 +189,47 @@
                     .verify-email__message {
                         @include font-size(18px);
                         font-weight: 600;
-                    } 
+                    }
 
                     .verify-email__link {
                         @include font-size(18px);
                         font-weight: 600;
+                    }
+                }
+
+                .modal {
+                    padding-top: 174px;
+
+                    .modal-dialog {
+                        .modal-content {
+                            width: 615px;
+                            margin: auto;
+                            padding: 64px;
+                            background-color: $white;
+                            border-radius: 4px;
+                            text-align: center;
+
+                            .img {
+                                margin-bottom: 24px;
+                            }
+
+                            .modal-title {
+                                @include font-size(32px);
+                                margin-bottom: 16px;
+                            }
+
+                            .subtitle {
+                                margin-bottom: 32px;
+                                color: $slate-gray;
+                            }
+
+                            .btn {
+                                @include button();
+                                padding: 16px 67px;
+                                color: $white;
+                                text-decoration: none;
+                            }
+                        }
                     }
                 }
             }
@@ -217,7 +257,7 @@
                 max-width: 661px;
                 padding: 16px;
                 color: $white;
-                
+
                 .bi-arrow-right {
                     margin-left: 8px;
                 }

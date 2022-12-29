@@ -6,30 +6,156 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/bootstrap.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/main.css'>
-    <script src='../assets/js/bootstrap.js'></script>
-    <script src='../assets/src/js/bootstrap.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../assets/css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../assets/css/main.css'>
+    <script src='../../assets/js/bootstrap.js'></script>
+    <script src='../../assets/src/js/bootstrap.js'></script>
 </head>
 
 <body>
     <!--navbar-->
-    <header></header>
+    <header id="masthead" class="site-header">
+        <nav id="nav-main" class="nav navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="nav-main__logo col-lg-3">
+                    <a class="logo" href="">
+                        <img src="../../assets/img/logo-black.png" alt="logo" class="">
+                    </a>
+                </div>
+                <div class="navbar navbar-right col-lg-6">
+                    <div class="navbar-right__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-bell" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                        </svg>
+                    </div>
+                    <div class="navbar-right__option">
+                        <select class="list__option">
+                            <option value="" class="list__option-item">
+
+                                <img src="../../assets/icons/chat-teardrop-dots-2.svg" class="w-100">
+                                Ready to Interview
+
+                            </option>
+                        </select>
+                    </div>
+                    <div class="btn-group navbar-right__info navbar">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="navbar-right__info-image">
+                                <img src="../../assets/img/user.png" alt="avatar" class="w-100">
+                            </div>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end information">
+                            <li><button class="dropdown-item" type="button">Action</button></li>
+                            <li><button class="dropdown-item" type="button">Another action</button></li>
+                            <li><button class="dropdown-item" type="button">Something else here</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
 
     <!--Content-->
-    <div class="">
+    <div class="row content">
         <!--Left side bar-->
-        <div>
+        <div class="content__left col-lg-2 position-fixed">
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="" class="">
+                        <img src="../../assets/icons/HouseSimple.svg" />Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="">
+                        <img src="../../assets/icons/UserCircle.svg" />
+                        Profile</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="">
+                        <img src="../../assets/icons/SuitcaseSimple.svg" />Jobs</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class=""><img src="../../assets/icons/Tray (1).svg" />Applied</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class=""><img src="../../assets/icons/chat-teardrop-dots.svg" />Messages</a>
+                </li>
+            </ul>
         </div>
 
-        <!--Complete profile section-->
-        <section></section>
+        <div class="content__right col-lg-10 offset-md-3">
+            <!-- Complete profile-->
+            <section class="section section-complete-profile">
+                <div class="step">
+                    <div class="step-item active"></div>
+                    <div class="step-item active"></div>
+                    <div class="step-item active"></div>
+                    <div class="step-item active"></div>
+                    <div class="step-item active"></div>
+                    <div class="step-item active"></div>
+                    <div class="step-item"></div>
+                    <div class="step-item"></div>
+                    <div class="step-item"></div>
+                    <div class="step-item"></div>
+                </div>
+                <div class="alert">
+                    <span>
+                        <i></i>
+                        Your profile can’t be found by recruiters because It’s missing key information
+                    </span>
+                    <a href="" class="alert-btn-complete">Complete your profile</a>
+                </div>
+            </section>
 
-        <!--User profile section-->
-        <section></section>
+            <!--user section-->
+            <section class="user-info-section">
+                <div>
+                    <div><img /></div>
+                    <div>
+                        <div>
+                            <h3>Dean Anderson</h3>
+                            <div>San Francisco, California</div>
+                        </div>
+                        <div>
+                            <div>Where are you in your job search?</div>
+                            <div>Keep your job status up-to-date to inform employers of your search.</div>
+                            <div>
+                                <select>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class=""></a>
+            </section>
 
-        <!--Recommended job section-->
-        <section></section>
+            <!--Recommended job section-->
+            <section>
+                <div>
+                    <div>
+                        <h3>Recommended Jobs</h3>
+                        <div>Jobs where you're a top applicant based on your profile job search</div>
+                    </div>
+                    <a href="" class="">Change Job Preferences</a>
+                </div>
+                <div>
+                    <div><img src=""></div>
+                    <div></div>
+                    <a href="">Browse Job</a>
+                </div>
+            </section>
+        </div>
     </div>
 
 </body>

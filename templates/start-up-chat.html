@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/main.css'>
+    <script src='../assets/js/main.js'></script>
+    <script src='../assets/js/bootstrap.min.js'></script>
+</head>
+
+<body>
+    <header id="masthead" class="site-header">
+        <nav id="nav-main" class="nav navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="nav-main__menu col-lg-9">
+                    <ul class="navbar-nav nav__menu">
+                        <li class="nav-item navbar-brand align-self-center">
+                            <a class="logo" href="">
+                                <img src="../assets/img/logo-black.png" alt="logo" class="w-100">
+                            </a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link" href="">Talents</a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link" href="">Chat</a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link" href="">Job Post</a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link" href="">Fundraise</a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link" href="">Analytics</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar navbar-right col-lg-3">
+                    <div class="navbar-right__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-bell" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                        </svg>
+                    </div>
+                    <div class="navbar-right__info navbar">
+                        <div class="navbar-right__info-image">
+                            <img src="../assets/img/user.png" alt="avatar" class="w-100">
+                        </div>
+                        <div class="information align-self-center">
+                            <h5 class="name">Dean Nguyen</h5>
+                            <p>Innovation Studio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="content" class="site-content">
+        <div class="container-fluid">
+            <section class="row section--content g-0">
+
+                <!-- sidebar -->
+                <div class="section--content__sidebar col-lg-3">
+                    <div class="">
+                        <div class="sidebar--content">
+                            <div class="sidebar--top">
+                                <h4 class="section__title text-dark">Conversations</h4>
+                            </div>
+                            <div class="search">
+                                <form>
+                                    <input type="text" name="search" placeholder="Search by job">
+                                    <button class="submit"><img src="../assets/icons/magnifying-glass-2.svg"
+                                            alt="search"></button>
+                                </form>
+                            </div>
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">Matches</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Request</button>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content" id="pills-tabContent">
+
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                                    <div class="user_chat-list" id="job-post-tab" data-bs-toggle="pill"
+                                        data-bs-target="#job-post" type="button" role="tab" aria-controls="job-post"
+                                        aria-selected="true">
+                                        <div class="user_chat-list__detail">
+                                            <div class="user">
+                                                <div class="user_avatar">
+                                                    <img src="../assets/img/avatar1.png" class="" />
+                                                </div>
+                                                <div>
+                                                    <div class="user_name">Annette Black<span class="time">1h</span>
+                                                    </div>
+                                                    <div class="user_position">Senior Product Designer</div>
+                                                    <div class="chat_name">Annette:<span
+                                                            class="chat_content">Hello</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user_chat-list__detail">
+                                            <div class="user">
+                                                <div class="user_avatar">
+                                                    <img src="../assets/img/avatar1.png" class="" />
+                                                </div>
+                                                <div>
+                                                    <div class="user_name">Annette Black<span class="time">1h</span>
+                                                    </div>
+                                                    <div class="user_position">Senior Product Designer</div>
+                                                    <div class="chat_name">Annette:<span
+                                                            class="chat_content">Hello</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade list-main_job" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- main content -->
+                <div class="section--content__main col-lg-9 d-flex">
+                    <div class="chat-section col-lg-8">
+                        <form class="form-message">
+                            <div class="form-message_top">
+                                <div class="form-message_top_content">
+                                    <div class="chat-box">
+                                        <div class="d-flex chat-box_info">
+                                            <div class="chat-box_info_avatar">
+                                                <img src="../assets/img/avatar1.png" class="" />
+                                            </div>
+                                            <label class="d-flex align-self-center chat-box_info_user">
+                                                <div class="name">Annette Black</div>
+                                                <div class="time">Dec 22</div>
+                                            </label>
+
+                                        </div>
+
+                                        <div class="chat-box_content">
+                                            <p>I’m open for new position! Please contact me</p>
+                                        </div>
+                                    </div>
+                                    <div class="chat-box ">
+                                        <div class="d-flex chat-box_info">
+                                            <label class="align-self-center chat-box_info_user">
+                                                <span class="time">Dec 22</span>
+                                                Annette Black
+                                            </label>
+                                            <div class="chat-box_info_avatar">
+                                                <img src="../assets/img/avatar1.png" class="" />
+                                            </div>
+                                        </div>
+                                        <div class="chat-box_content">
+                                            <p>I’m open for new position! Please contact me</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-message_bottom">
+                                <div class="chat-area">
+                                    <textarea class="chat-area_input"
+                                        placeholder="Start writing your message..."></textarea>
+                                </div>
+                                <input type="submit" class="btn btn-primary" value="Send message" />
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-3 applicant-info">
+                        <div class="applicant-info_content">
+                            <div class="top">
+                                <label class="top_title">Applicant Information</label>
+                                <div class="top_img">
+                                    <img src="../assets/img/avatar1.png" />
+                                </div>
+                                <div class="top_name">Annette Black</div>
+                                <div class="top_destination">San Francisco, California</div>
+                            </div>
+                            <div class="body">
+                                <div class="body_title">APPLIED TO</div>
+                                <div class="body_position">Senior UI/UX Designer</div>
+                                <div class="body_destination">Los Angeles, California</div>
+                                <div class="body_time">Dec 22, 2022</div>
+                            </div>
+                            <div class="bottom">
+                                <button class="btn btn-primary">Close Conversation</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

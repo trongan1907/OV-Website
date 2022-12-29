@@ -1,0 +1,77 @@
+.site-header {
+    z-index: 98;
+    position: static;
+
+    .nav {
+        border-bottom: 1px solid #E7E7E7;
+        padding: 16px 0;
+
+        &-main__menu {
+            .nav__menu {
+                .nav-item {
+                    margin-left: 97px;
+
+                    .nav-link {
+                        font-size: 14px;
+                        line-height: 1.5;
+                        color: #1C212D;
+                        font-weight: 600px;
+                    }
+
+                    &:first-child {
+                        margin-left: 0;
+                        width: 46px;
+                        height: 46px;
+                        border-radius: 50%;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+
+        .navbar-right {
+            max-width: 310px;
+
+            &__icon {
+                svg {
+                    height: 22px;
+                    width: 22px;
+                    margin-right: 39px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+
+            &__info {
+
+                &-image {
+                    width: 46px;
+                    height: 46px;
+                    border-radius: 50%;
+                }
+
+                .information {
+                    padding-left: 16px;
+
+                    h5,
+                    p {
+                        margin-bottom: 0;
+                        font-size: 14px;
+                        line-height: 1.5;
+                    }
+
+                    p {
+                        font-weight: 500px;
+                        color: #717584;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar {
+        --bs-navbar-padding-y: 0;
+    }
+}

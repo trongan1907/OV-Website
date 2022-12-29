@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/main.css'>
+    <script src='../assets/js/main.js'></script>
+    <script src='../assets/js/bootstrap.min.js'></script>
+    <title>Job_post</title>
+</head>
+<body>
+    <header id="masthead" class="site-header">
+        <nav id="nav-main" class="nav navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="nav-main__menu col-lg-9">
+                    <ul class="navbar-nav nav__menu">
+                        <li class="nav-item navbar-brand align-self-center">
+                            <a class="logo" href="">
+                                <img src="../assets/img/logo-black.png" alt="logo" class="w-100">
+                            </a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link" href="">Talents</a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link" href="">Chat</a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link" href="">Job Post</a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link" href="">Fundraise</a>
+                        </li>
+                        <li class="nav-item align-self-center">
+                            <a class="nav-link" href="">Analytics</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar navbar-right col-lg-3">
+                    <div class="navbar-right__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+</svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+  <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+</svg>
+                    </div>
+                    <div class="navbar-right__info navbar">
+                        <div class="navbar-right__info-image">
+                            <img src="../assets/img/user.png" alt="avatar" class="w-100">
+                        </div>
+                        <div class="information align-self-center">
+                            <h5 class="name">Dean Nguyen</h5>
+                            <p>Innovation Studio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="content" class="site-content">
+        <div class="container-fluid">
+            <section class="row section--content g-0">
+
+                <!-- sidebar -->
+                <div class="section--content__sidebar col-lg-3">
+                    <div class="">
+                        <div class="sidebar--content">
+                            <div class="sidebar--top">
+                                <h4 class="section__title text-dark">Job</h4>
+                                <a href="">+ Post Job</a>
+                            </div>
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Active</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Draft</button>
+                                </li>
+                            </ul>
+                            <div class="search">
+                                <form>
+                                    <input type="text" name="search" placeholder="Search by job">
+                                    <button class="submit"><img src="../assets/icons/magnifying-glass-2.svg" alt="search"></button>
+                                </form>
+                            </div>
+                            <div class="tab-content" id="pills-tabContent">
+                                
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <div class="main_job-box"id="job-post-tab" data-bs-toggle="pill" data-bs-target="#job-post" type="button" role="tab" aria-controls="job-post" aria-selected="true">
+                                        <div class="main_job-box__detail">
+                                            <div class="main_job-box__info">
+                                                <div class="main_job-box__time">
+                                                Last edit: 11:50 AM, 12/22/2022
+                                                </div>
+                                                <div class="main_job-box__name">
+                                                Senior UI/UX Designer
+                                                </div>
+                                                <div class="main_job-box__company">Los Angeles, California</div>
+                                            </div>
+                                            <div class="star">
+                                                <a href="" class="like" id="myBtn" onclick="myFunction()">
+                                                    <img src="../assets/icons/star-unfilled.svg">
+                                                    <img style="display: none;" src="../assets/icons/star.svg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="main_job-box__complete">
+                                            <div class="percent-bar">
+                                                <div class="percent-bar percent-bar--complete">
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="percent-bar percent-bar--pending">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="percent">
+                                                100% complete
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade list-main_job" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    <div class="main_job-box"id="job-post-tab" data-bs-toggle="pill" data-bs-target="#job-post" type="button" role="tab" aria-controls="job-post" aria-selected="true">
+                                        <div class="main_job-box__detail">
+                                            <div class="main_job-box__info">
+                                                <div class="main_job-box__time">
+                                                Last edit: 11:50 AM, 12/22/2022
+                                                </div>
+                                                <div class="main_job-box__name">
+                                                Senior UI/UX Designer
+                                                </div>
+                                                <div class="main_job-box__company">Los Angeles, California</div>
+                                            </div>
+                                            <div class="star">
+                                                <a href="" class="like" id="myBtn" onclick="myFunction()">
+                                                    <img src="../assets/icons/star-unfilled.svg">
+                                                    <img style="display: none;" src="../assets/icons/star.svg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="main_job-box__complete">
+                                            <div class="percent-bar">
+                                                <div class="percent-bar percent-bar--complete">
+                                                    
+                                                </div>
+                                                <div class="percent-bar percent-bar--pending">
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="percent">
+                                                75% complete
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main_job-box"id="job-post-tab" data-bs-toggle="pill" data-bs-target="#job-post" type="button" role="tab" aria-controls="job-post" aria-selected="true">
+                                        <div class="main_job-box__detail">
+                                            <div class="main_job-box__info">
+                                                <div class="main_job-box__time">
+                                                Last edit: 11:50 AM, 12/22/2022
+                                                </div>
+                                                <div class="main_job-box__name">
+                                                Senior UI/UX Designer
+                                                </div>
+                                                <div class="main_job-box__company">Los Angeles, California</div>
+                                            </div>
+                                            <div class="star">
+                                                <a href="" class="like" id="myBtn" onclick="myFunction()">
+                                                    <img src="../assets/icons/star-unfilled.svg">
+                                                    <img style="display: none;" src="../assets/icons/star.svg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="main_job-box__complete">
+                                            <div class="percent-bar">
+                                                <div class="percent-bar percent-bar--complete">
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="percent-bar percent-bar--pending">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="percent">
+                                                100% complete
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- main content -->
+                <div class="section--content__main col-lg-9" id="job-post" role="tabpanel" aria-labelledby="job-post-tab">
+                    <div class="talent--menu">
+                        <div class="talent--menu__content">
+                            <ul class="nav nav-pills talent--menu__content--title" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link navbar active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-curated" type="button" role="tab" aria-controls="pills-curated" aria-selected="flase">
+                                        <div>Overview</div>
+                                        <nav></nav>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link navbar" id="pills-actived-tab" data-bs-toggle="pill" data-bs-target="#pills-actived" type="button" role="tab" aria-controls="pills-actived" aria-selected="true">
+                                        <div>Edit job</div>
+                                        <nav></nav>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link navbar" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-passive" type="button" role="tab" aria-controls="pills-passive" aria-selected="false">
+                                        <div>Application</div>
+                                        <nav>18k</nav>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade active show list-post " id="pills-curated" role="tabpanel" aria-labelledby="pills-curated-tab">...</div>
+                                <div class="tab-pane fade job-post" id="pills-actived" role="tabpanel" aria-labelledby="pills-actived-tab">
+                                    <div class="edit--job">
+                                        <div class="edit--job__content">
+                                            <div class="edit--job__content-title">
+                                                <h4>Job Details</h4>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade applicant" id="pills-passive" role="tabpanel" aria-labelledby="pills-passive-tab">...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

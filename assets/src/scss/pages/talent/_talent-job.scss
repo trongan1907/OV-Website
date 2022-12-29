@@ -1,0 +1,398 @@
+.site-header {
+    .nav {
+        border-bottom: 1px solid #E7E7E7;
+        padding: 16px 0;
+
+        &-main__logo {
+            .logo {
+                margin-left: 0;
+                width: 46px;
+                height: 46px;
+                border-radius: 50%;
+                padding: 0;
+                top: 16px
+            }
+        }
+
+        .navbar-right {
+            max-width: 448px;
+            width: 100%;
+
+            &__option {
+                .list__option {
+                    @include input();
+                    padding: 12px 16px;
+                }
+            }
+
+            &__icon {
+                svg {
+                    height: 22px;
+                    width: 22px;
+                    margin-right: 39px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+
+            &__info {
+
+                &-image {
+                    width: 46px;
+                    height: 46px;
+                    border-radius: 50%;
+                }
+
+                .information {
+                    padding-left: 16px;
+
+                    h5,
+                    p {
+                        margin-bottom: 0;
+                        font-size: 14px;
+                        line-height: 1.5;
+                    }
+
+                    p {
+                        font-weight: 500px;
+                        color: #717584;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar {
+        --bs-navbar-padding-y: 0;
+
+        .btn {
+            display: flex;
+            background-color: transparent;
+            border-color: transparent;
+        }
+        .dropdown-toggle::after {
+            color: $eigengrau;
+        }
+    }
+}
+
+.content {
+    padding-top: 26px;
+
+    &__left {
+        padding: 32px;
+        gap: 24px;
+
+        .menu {
+            list-style-type: none;
+
+            &-item {
+                margin-bottom: 44px;
+                text-align: center;
+                a {
+                    @include font-size(14px);
+                    font-weight: 600;
+                    color: $cool-gray;
+                    text-decoration: none;
+                    
+                    img{
+                        display: block;
+                        width: 32px;
+                        margin: auto;
+                    }
+                }
+
+            }
+
+            &-item:hover {
+                a {
+                    color: $persian-blue;
+                }
+            }
+        }
+    }
+
+    &__right {
+        max-width: 1002px;
+        width: 100%;
+
+        .section-complete-profile {
+            background-color: $white;
+            border: 1px solid #E7E7E7;
+            border-radius: 0px 0px 4px 4px;
+
+            .step {
+                display: flex;
+                gap: 2px;
+
+                &-item {
+                    height: 4px;
+                    flex: 1;
+                    background-color: #D9D9D9;
+
+                    &.active {
+                        background-color: $green;
+                    }
+                }
+            }
+
+            .alert {
+                display: flex;
+                justify-content: space-between;
+
+                span {
+                    @include font-size(16px);
+                    font-weight: 600;
+                }
+
+                a {
+                    @include font-size(16px);
+                    font-weight: 500;
+                    color: $persian-blue;
+                }
+            }
+        }
+
+        .section-talent-job {
+            padding-top: 24px;
+
+            .section__title {
+                @include font-size(24px);
+                margin-bottom: 25px;
+            }
+
+            &__tab {
+                border-bottom: 1px solid #E7E7E7;
+
+                .nav-item {
+                    .nav-link {
+                        color: $cool-gray;
+
+                        .total {
+                            width: 16px;
+                            height: 16px;
+                            padding: 4px;
+                            @include font-size(12px);
+                            font-weight: 500;
+                            color: $eigengrau;
+                            background-color: $white-smoke;
+                            border-radius: 4px;
+                        }
+                    }
+
+                    .active {
+                        background-color: transparent;
+                        color: $eigengrau;
+                        border-bottom: 1.5px solid $eigengrau;
+                        border-radius: unset;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            &__content {
+                padding-top: 24px;
+
+                .filter {
+                    background-color: $white;
+                    border: 1px solid #E7E7E7;
+                    padding: 24px;
+                    text-align: center;
+
+                    .field {
+                        &-inputs {
+                            display: flex;
+
+                            i {
+                                img {}
+                            }
+
+                            .input {
+                                @include input();
+                                max-width: 465px;
+                                padding: 16px;
+                            }
+                        }
+                    }
+
+                    &-tabs {
+                        display: flex;
+                        gap: 16px;
+                        padding-top: 16px;
+                        padding-bottom: 16px;
+                        border-bottom: 1px solid #E7E7E7;
+                        margin-bottom: 16px;
+
+                        .tab {
+                            @include tab();
+                            @include font-size(14px);
+                            max-width: 117px;
+                            background-color: $white-smoke;
+                            padding: 10px 16px;
+                            font-weight: 500;
+                        }
+
+                        .btn-clear {
+                            text-decoration: none;
+                            color: $slate-gray;
+                        }
+                    }
+
+                    .btn-filter {
+                        text-decoration: none;
+                        color: $eigengrau;
+
+                        img {
+                            margin-right: 12px;
+                        }
+                    }
+                }
+
+                .bar {
+                    display: flex;
+                    padding-top: 27.5px;
+                    padding-bottom: 27.5px;
+                    justify-content: space-between;
+
+                    .left {
+                        display: flex;
+
+                        .bar-result {
+                            @include font-size(20px);
+                            font-weight: 600;
+                            margin-right: 32px;
+                        }
+
+                        .bar-sort {
+                            .label {
+                                @include font-size(14px);
+                                font-weight: 500;
+                                margin-right: 16px;
+                            }
+
+                            .drop-down {
+                                @include input();
+                                max-width: 170px;
+                                padding: 8px 14px;
+                                background-color: #FCFCFC;
+                            }
+                        }
+                    }
+
+
+                    &-alert {
+                        .label {
+                            @include font-size(14px);
+                            color: $eigengrau;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .companies {
+                    .item {
+                        background-color: #FCFCFC;
+                        border: 1px solid #E7E7E7;
+                        border-radius: 4px;
+                        padding: 24px;
+
+                        &-top {
+                            display: flex;
+                            gap: 16px;
+                            padding-bottom: 24px;
+
+                            .company {
+
+                                &-name {
+                                    @include font-size(20px);
+                                    font-weight: 600;
+                                }
+
+                                &-des {
+                                    @include font-size(14px);
+                                    color: $slate-gray;
+                                }
+
+                                &-city {
+                                    @include font-size(14px);
+                                    color: $slate-gray;
+                                }
+
+                                &-employee {
+                                    @include font-size(14px);
+                                    color: $slate-gray;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+
+                        &-bottom {
+                            background-color: $white-smoke;
+                            border-radius: 4px;
+                            padding: 16px;
+                            display: flex;
+                            justify-content: space-between;
+
+                            &__left {
+                                .title {
+                                    @include font-size(16px);
+                                    font-weight: 600;
+                                    margin-bottom: 8px;
+                                }
+
+                                .info {
+                                    display: flex;
+                                    gap: 8px;
+                                    margin-bottom: 16px;
+
+                                    .destination {
+                                        @include font-size(14px);
+                                        color: $slate-gray;
+                                    }
+
+                                    .type {
+                                        @include font-size(14px);
+                                        color: $slate-gray;
+                                    }
+
+                                    .salary {
+                                        @include font-size(14px);
+                                        color: $slate-gray;
+                                    }
+                                }
+
+                                .time-post {
+                                    @include font-size(12px);
+                                    font-weight: 500;
+                                    color: $cool-gray;
+                                }
+                            }
+
+                            &__right {
+                                .btn-save {
+                                    @include input();
+                                    max-width: 97px;
+                                    border: 1px solid $eerie-black;
+                                    color: $eerie-black;
+                                    padding: 10px 32px;
+                                    text-decoration: none;
+                                }
+
+                                .btn-apply {
+                                    @include button();
+                                    background-color: $eerie-black;
+                                    max-width: 97px;
+                                    padding: 10px 32px;
+                                    text-decoration: none;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
